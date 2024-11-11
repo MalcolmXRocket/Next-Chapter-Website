@@ -21,6 +21,8 @@ float
 absolute positioning
 relative positioning
 
+Work on making page responsive
+
 
 
 
@@ -33,5 +35,6 @@ Download Pictures to put on page
 put in images folder
 
 if i have time figure out a simple rock paper scissors javascript game to put on the website.
+
 
 
