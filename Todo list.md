@@ -7,7 +7,10 @@ Make Prototype Html page
 2.with a nav bar that links to every other page
 3.One page a form/ email page to send comments/ questions.  Should in theory be able to respond with javascript thank you for your information whatever persons name is
 4. Need an index page
+added a nav bar in the aside section
+need to add the other things like section footer Ill look it up later
 5. need a page with a table
+table probably in either the future projects page
 6. need an ordered and unordered list
 
 
