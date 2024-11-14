@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me</title>
     <link rel="stylesheet" href="stylesheet.css">
-    <script src="script.js" defer></script>
+    <script src="script.js" defer></script> <!-- Link to script.js -->
 </head>
 
 <body>
@@ -12,16 +13,18 @@
         <h1>Contact Me</h1>
     </header>
 
-    <aside>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about_me.html">About Me</a>
-            <a href="future_projects.html">Future Projects</a>
-            <a href="contact_me.html">Contact Me</a>
-        </nav>
-    </aside>
+    <nav>
+        <a href="Index.html">Home</a>
+        <a href="About Me.html">About Me</a>
+        <a href="Future Projects.html">Future Projects</a>
+        <a href="Contact me.html">Contact</a>
+    </nav>
 
     <main>
+        <section>
+            <img/>
+        </section>
+
         <form id="contact-form">
             <label for="firstName">First Name:</label>
             <input type="text" id="firstName" name="firstName" required>
@@ -36,16 +39,14 @@
             <input type="email" id="confirmEmail" name="confirmEmail" required>
             
             <label for="question">Comments or Questions:</label>
-            <textarea id="question" name="question"></textarea>
+            <textarea id="question" name="question" required></textarea>
             
             <button type="button" onclick="validateEmails()">Submit</button>
         </form>
-
-        <p id="confirmationMessage"></p>
     </main>
 
     <footer>
-        <p>&copy; 2024 XXXXXX XXXXXX Foundation</p>
+        <p>&copy; 2023 Your Name. All rights reserved.</p>
     </footer>
-</body>    
+</body>
 </html>

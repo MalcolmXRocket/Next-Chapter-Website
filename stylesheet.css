@@ -1,47 +1,72 @@
-/* Using viewport width and height units for a hero section */
-.hero {
-    width: 100vw; /* 100% of the viewport width */
-    height: 100vh; /* 100% of the viewport height */
-    background: url('hero-image.jpg') center/cover no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    text-align: center;
-  }
-  
-  /* Responsive text size for headings */
-  h1 {
-    font-size: 5vw; /* Font size scales with viewport width */
-  }
-  
-  h2 {
-    font-size: 3vw; /* Smaller than h1 but still responsive */
-  }
-  
-  /* General body styling for consistency */
-  body {
+/* Body styling */
+body {
+    background-color: #f5f5dc; /* Beige background throughout */
+    color: #333333; /* Black text */
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
-  }
-  
-  /* Navigation styling */
-  aside nav ul {
-    list-style-type: none;
+}
+
+/* Centered Header Styling */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #f5f5dc; /* Beige background to match the rest of the page */
+    color: #333333; /* Black text color */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header h2 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #333333;
+}
+
+/* Horizontal Navigation Bar Styling */
+nav {
+    background-color: #f5f5dc; /* Match beige background */
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none; /* Remove bullets */
     padding: 0;
     margin: 0;
-    display: flex;
-    gap: 10px;
-  }
-  
-  aside nav ul li a {
-    text-decoration: none;
-    color: #333;
-    font-size: 2vw;
-  }
-  
-  aside nav ul li a:hover {
-    color: #007acc; /* Example hover color */
-  }
+    display: flex; /* Set to flex for horizontal layout */
+    justify-content: center; /* Center items horizontally */
+}
+
+nav ul li {
+    margin: 0 15px; /* Add space between links */
+}
+
+nav ul li a {
+    text-decoration: none; /* Remove underline */
+    color: #333333; /* Dark grey/black text */
+    font-size: 1.2em;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    color: #cc0000; /* Red on hover for subtle effect */
+}
+
+/* Main Content Styling */
+main {
+    padding: 20px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #f5f5dc; /* Match beige background */
+    color: #333333; /* Dark grey/black text */
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+}
