@@ -2,16 +2,9 @@ To Do list
 
 Lets look at requirements needed and add them into the pages
 
-Make Prototype Html page
-1.obviously linking to css/ javascript page
-2.with a nav bar that links to every other page
-3.One page a form/ email page to send comments/ questions.  Should in theory be able to respond with javascript thank you for your information whatever persons name is
-4. Need an index page
-added a nav bar in the aside section
-need to add the other things like section footer Ill look it up later
-5. need a page with a table
+4. need a page with a table
 table probably in either the future projects page
-6. need an ordered and unordered list
+5. need an ordered and unordered list
 
 
 Make Css page
@@ -25,12 +18,6 @@ absolute positioning
 relative positioning
 
 Work on making page responsive
-
-
-
-
-Make JavaScript page
-JavaScript code to your web form that checks if the two email fields match. If they don’t match, it will show an alert box; if they do match, it will show a confirmation message with the entered name and email.
 
 
 

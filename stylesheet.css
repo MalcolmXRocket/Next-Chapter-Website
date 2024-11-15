@@ -2,10 +2,12 @@
 body {
     background-color: #f5f5dc; /* Beige background throughout */
     color: #333333; /* Black text */
-    font-family: Arial, sans-serif;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
+    text-align: center;
+    
 }
 
 /* Centered Header Styling */
@@ -69,4 +71,17 @@ footer {
     text-align: center;
     padding: 15px;
     width: 100%;
+}
+
+/* Center all unordered and ordered lists along with their bullets or numbers */
+ul, ol {
+    list-style-position: inside; /* This aligns bullets or numbers with text */
+    text-align: center; /* Centers the list content */
+    padding: 0; /* Removes default padding on the left */
+    display: inline-block; /* Keeps the list inline for centering */
+}
+
+/* Optional: Center the container around the list for wider layout control */
+section, main {
+    text-align: center;
 }
