@@ -5,48 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me</title>
     <link rel="stylesheet" href="stylesheet.css">
-    <script src="script.js" defer></script> <!-- Link to script.js -->
 </head>
-
 <body>
     <header>
         <h1>Contact Me</h1>
+        <p>Feel free to reach out. I'd love to connect!</p>
     </header>
 
     <nav>
-        <a href="Index.html">Home</a>
-        <a href="About Me.html">About Me</a>
-        <a href="Future Projects.html">Future Projects</a>
-        <a href="Contact me.html">Contact</a>
+        <ul>
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="About Me.html">About Me</a></li>
+            <li><a href="Contact me.html">Contact</a></li>
+        </ul>
     </nav>
 
     <main>
-        <section>
-            <img/>
-        </section>
-
         <form id="contact-form">
-            <label for="firstName">First Name:</label>
-            <input type="text" id="firstName" name="firstName" required>
+            <div>
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" required>
+            </div>
             
-            <label for="lastName">Last Name:</label>
-            <input type="text" id="lastName" name="lastName" required>
+            <div>
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required>
+            </div>
             
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
             
-            <label for="confirmEmail">Confirm Email:</label>
-            <input type="email" id="confirmEmail" name="confirmEmail" required>
+            <div>
+                <label for="confirmEmail">Confirm Email:</label>
+                <input type="email" id="confirmEmail" name="confirmEmail" required>
+            </div>
             
-            <label for="question">Comments or Questions:</label>
-            <textarea id="question" name="question" required></textarea>
+            <div>
+                <label for="question">Comments or Questions:</label>
+                <textarea id="question" name="question" required></textarea>
+            </div>
+            
+            <div id="form-message"></div>
             
             <button type="button" onclick="validateEmails()">Submit</button>
         </form>
     </main>
 
     <footer>
-        <p>&copy; 2023 Your Name. All rights reserved.</p>
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+        <p>Contact me at <a href="mailto:yourname@example.com">yourname@example.com</a>.</p>
     </footer>
+
+    <!-- Link to JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
