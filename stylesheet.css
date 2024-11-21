@@ -233,3 +233,34 @@ tr:hover {
 section {
     animation: fadeIn 1s ease-in;
 }
+/* Ensure images fill the table cell and maintain aspect ratio */
+table img {
+    width: 100%;           /* Make the image fill the width of the cell */
+    height: auto;          /* Maintain the aspect ratio */
+    object-fit: cover;     /* Ensures the image fills the box without distorting */
+}
+
+/* Optionally, add a max width for the image container to avoid stretching too far */
+table td {
+    max-width: 150px;      /* Max width for the image container */
+    padding: 10px;         /* Add some spacing around the image */
+}
+
+/* Make the table responsive */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Style for small screens */
+@media (max-width: 600px) {
+    table td {
+        display: block;     /* Stack table cells on small screens */
+        width: 100%;
+    }
+
+    table img {
+        width: 100%;        /* Ensure image stretches fully on small screens */
+        height: auto;       /* Maintain aspect ratio */
+    }
+}
