@@ -1,39 +1,49 @@
-/* Body styling */
+
+/* Global Colors */
+:root {
+    --beige: #f5f5dc;
+    --darker-beige: #eae6d6;
+    --text-dark: #333333;
+    --text-light: #666666;
+    --hover-red: #cc0000;
+    --hover-red-dark: #a30000;
+    --white: #ffffff;
+}
+
+/* Body Styling */
 body {
-    background-color: #f5f5dc; /* Beige background throughout */
-    color: #333333; /* Black text */
-    font-family: 'Times New Roman', Times, serif, sans-serif;
+    background-color: var(--beige); /* Beige background throughout */
+    color: var(--text-dark); /* Dark grey text */
+    font-family: 'Roboto', sans-serif; /* Modern font for readability */
     margin: 0;
     padding: 0;
     line-height: 1.6;
     text-align: center;
-    
 }
 
-/* Centered Header Styling */
+/* Header Styling */
 header {
     text-align: center;
     padding: 20px;
-    background-color: #f5f5dc; /* Beige background to match the rest of the page */
-    color: #333333; /* Black text color */
+    background-color: var(--darker-beige); /* Slightly darker beige for contrast */
+    color: var(--text-dark);
 }
 
 header h1 {
     margin: 0;
     font-size: 2.5em;
+    font-weight: bold;
 }
 
-header h2 {
-    margin: 0;
-    font-size: 1.5em;
-    color: #333333;
+header p {
+    font-size: 1.2em;
+    color: var(--text-light); /* Subtle grey for secondary text */
 }
 
-/* Horizontal Navigation Bar Styling */
+/* Navigation Bar Styling */
 nav {
-    background-color: #f5f5dc; /* Match beige background */
+    background-color: var(--beige); /* Match beige background */
     padding: 10px 0;
-    text-align: center;
 }
 
 nav ul {
@@ -41,22 +51,22 @@ nav ul {
     padding: 0;
     margin: 0;
     display: flex; /* Set to flex for horizontal layout */
-    justify-content: center; /* Center items horizontally */
-}
-
-nav ul li {
-    margin: 0 15px; /* Add space between links */
+    justify-content: center;
+    gap: 20px; /* Add spacing between items */
 }
 
 nav ul li a {
     text-decoration: none; /* Remove underline */
-    color: #333333; /* Dark grey/black text */
-    font-size: 1.2em;
-    padding: 5px 10px;
+    color: var(--text-dark); /* Dark grey/black text */
+    font-size: 1.1em;
+    padding: 8px 12px;
+    transition: color 0.3s, background-color 0.3s;
 }
 
 nav ul li a:hover {
-    color: #cc0000; /* Red on hover for subtle effect */
+    color: var(--white); /* White text on hover */
+    background-color: var(--hover-red); /* Red hover effect */
+    border-radius: 5px; /* Rounded corners for hover background */
 }
 
 /* Main Content Styling */
@@ -64,24 +74,162 @@ main {
     padding: 20px;
 }
 
+section {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: var(--white); /* White background for sections */
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
 /* Footer Styling */
 footer {
-    background-color: #f5f5dc; /* Match beige background */
-    color: #333333; /* Dark grey/black text */
+    background-color: var(--darker-beige); /* Slightly darker beige for contrast */
+    color: var(--text-dark);
     text-align: center;
     padding: 15px;
     width: 100%;
 }
 
-/* Center all unordered and ordered lists along with their bullets or numbers */
-ul, ol {
-    list-style-position: inside; /* This aligns bullets or numbers with text */
-    text-align: center; /* Centers the list content */
-    padding: 0; /* Removes default padding on the left */
-    display: inline-block; /* Keeps the list inline for centering */
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Add spacing between footer links */
 }
 
-/* Optional: Center the container around the list for wider layout control */
-section, main {
+footer ul li a {
+    text-decoration: none;
+    color: var(--text-dark);
+    transition: color 0.3s;
+}
+
+footer ul li a:hover {
+    color: var(--hover-red); /* Red on hover for footer links */
+}
+
+/* List Styling */
+ul, ol {
+    list-style-position: inside;
     text-align: center;
+    padding: 0;
+    margin: 15px auto;
+    display: inline-block;
+}
+
+/* Form Styling */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: var(--white);
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input:focus, form textarea:focus {
+    border-color: var(--hover-red);
+    outline: none;
+    box-shadow: 0 0 5px var(--hover-red);
+}
+
+form button {
+    background-color: var(--hover-red);
+    color: var(--white);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+form button:hover {
+    background-color: var(--hover-red-dark);
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    form input, form textarea, form button {
+        font-size: 1rem;
+    }
+
+    header, footer {
+        padding: 10px;
+        text-align: center;
+    }
+
+    section {
+        margin-bottom: 15px;
+        padding: 10px;
+    }
+}
+
+.profile-photo {
+    width: 200px; /* Increase the size of the profile picture */
+    height: auto; /* Maintain the aspect ratio */
+    border-radius: 50%; /* Optional for a circular profile photo */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    vertical-align: middle;
+}
+
+td img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px; /* Optional: Add rounded corners */
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+/* Fade-in effect for sections */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+section {
+    animation: fadeIn 1s ease-in;
 }
